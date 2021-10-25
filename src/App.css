@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+.main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.auth-form {
+    margin: 0 auto;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.auth-form__text-input {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    margin: 5px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.auth-form__submit-input {
+    margin-top: 30px;
+    border: none;
+    border-radius: 2px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.auth-form__submit-input:hover {
+    background-color: cornflowerblue;
+    transition: 0.2s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.auth-form__submit-input:disabled {
+    background-color: #777;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.auth-form__warning {
+    font-size: 14px;
+    color: tomato;
+    margin-top: 5px;
+}
+
+.profile {
+    margin: 0 auto;
+    width: max-content;
+    text-align: center;
+}
+ 
+.login {
+    color: seagreen;
+}
+
+.login__label {
+    font-weight: 400;
+    color: #333;
+}
+
+.back-link {
+    color: cornflowerblue;
+    text-decoration: none;
 }
